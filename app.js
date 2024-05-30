@@ -86,7 +86,7 @@ app.use((req,res,next)=>{
     next();
 });
 
-app.use("https://wanderlust-0hug.onrender.com",listingRouter);
+
 app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewRouter);
 app.use("/", userRouter);
